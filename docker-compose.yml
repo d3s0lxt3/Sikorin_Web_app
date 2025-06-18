@@ -13,7 +13,7 @@ services:
       - DATABASE_USER=user
       - DATABASE_PASSWORD=Test123
     volumes:
-      - ./:/var/www/html
+      - .html/:/var/www/html
       - db_data:/var/lib/mysql
     depends_on:
       - db
