@@ -28,8 +28,8 @@ services:
       MYSQL_USER: user
       MYSQL_PASSWORD: Test123
       MYSQL_ROOT_PASSWORD: Test123
-#    volumes:
-#      - db_data:/var/lib/mysql
+    volumes:
+      - db_data:/var/lib/mysql
     networks:
       custom_network:
         ipv4_address: 172.20.0.23
