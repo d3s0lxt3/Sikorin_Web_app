@@ -19,7 +19,7 @@ services:
       - db
     networks:
       custom_network:
-        ipv4_address: 172.20.0.22
+        ipv4_address: 10.2.100.22
 
   db:
     image: mariadb
@@ -32,7 +32,7 @@ services:
       - db_data:/var/lib/mysql
     networks:
       custom_network:
-        ipv4_address: 172.20.0.23
+        ipv4_address: 10.2.100.23
 
 volumes:
   db_data: {}
@@ -42,4 +42,4 @@ networks:
     driver: bridge
     ipam:
       config:
-        - subnet: 172.20.0.0/16
+        - subnet: 10.2.0.0/16
